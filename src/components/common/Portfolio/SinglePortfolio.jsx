@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { useState } from "react";
-import Lightbox from 'react-image-lightbox';
 
 const SinglePortfolio = ({ item, index, portfolios }) => {
   const [photoIndex, setPhotoIndex] = useState(index);
@@ -11,17 +10,6 @@ const SinglePortfolio = ({ item, index, portfolios }) => {
 
   return (
     <>
-      {open && (
-        <Lightbox
-
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setOpen(false)}
-          onMovePrevRequest={() => setPhotoIndex((photoIndex + images.length - 1) % images.length)}
-          onMoveNextRequest={() => setPhotoIndex((photoIndex + 1) % images.length)}
-        />
-      )}
 
       <motion.div animate={{ scale: 1 }}
         initial={{ scale: 0.9 }}
