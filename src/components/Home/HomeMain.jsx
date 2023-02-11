@@ -19,7 +19,7 @@ const HomeMain = () => {
       <ServicesArea/>
       <ProjectArea/>
       <Testimonial/>
-      <BrandArea/>
+      {/* <BrandArea/> */}
       <BlogArea/>
       <Cta/>
       <Footer/>

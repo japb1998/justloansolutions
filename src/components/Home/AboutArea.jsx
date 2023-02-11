@@ -15,8 +15,8 @@ const AboutArea = () => {
               <div className="tpabout text-center">
                 <div className="tp-section-title">
                   <span className="tp-sub-title mb-20">#About me</span>
-                  <h2 className="tp-title mb-30">I Have Experience in UI/UX <br /> Design Since 2008</h2>
-                  <p className="about-des-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                  <h2 className="tp-title mb-30">Hola Mi nombre es Maria Alejandra Paez<br /> soy Mortgage Broker en el Estado de la Florida.</h2>
+                  <p className="about-des-text">Mi pasión es poder ayudarles a conseguir la casa de sus sueños. Estos sueños incluyen a las personas que están comprando por primera vez, las personas que quieren mejorar las condiciones de su hipoteca actual y a los inversionistas los cuales pueden ser locales o extranjeros.</p>
                 </div>
                 <div className="tpabout-button mt-35">
                   <Link href="/portfolio">
@@ -45,18 +45,17 @@ const AboutArea = () => {
       {/* <!-- tpvideo-area start --> */}
       <section className="tpvideo-area grey-bg pb-150 p-relative">
         <div className="container">
-          <div className="row">
-            <div className="col-xl-12">
-              <div className="tpvideo tpvideo-2">
-                <img src="assets/img/video/video-2.jpg" alt="video-img" />
+
+            <div style={{display:'flex',justifyContent: 'center'}}>
+              <div className="tpvideo tpvideo-2" style={{maxWidth: 'fit-content'}}>
+                <img src="assets/img/maria/main.jpeg" alt="video-img" style={{maxHeight: '100vh', width: 'auto'}}/>
                 <div className="tpvideo__content">
                   <div className="video-button">
-                    <button onClick={handleShow} href="https://www.youtube.com/watch?v=o4GuSJYSzrY" className="popup-video"> <i className="fa-solid fa-play"></i></button>
+                    <button onClick={handleShow}  className="popup-video"> <i className="fa-solid fa-play"></i></button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
           <div className="tpvideo__shape-star tpvideo__shape-star-1">
             <svg width="19" height="17" viewBox="0 0 28 26" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z" fill="#1C99FE" />

@@ -9,10 +9,10 @@ const HeroArea = () => {
             <div className="col-xl-12">
               <div className="tpdesign-hero text-center">
                 <div className="tpdesign-hero-image mb-55">
-                  <img src="assets/img/hero/hero-3.jpg" alt="hero" />
+                  <img src="assets/img/maria/face_maria.jpeg" alt="hero" />
                 </div>
-                <span className="tpdesign-sub-title mb-45">Hi👋 I am Hillexa</span>
-                <h2 className="tpdesign-title pb-10">UI/UX Designer Specialized <br />  in Product Design</h2>
+                <span className="tpdesign-sub-title mb-45">Hi👋 I am Maria Paez</span>
+                <h2 className="tpdesign-title pb-10">Mortgage Broker <br />  en el Estado de la Florida.</h2>
                 <div className="down-arrow">
                   <a href="#about" className="smoth-scroll">
                     <i className="fal fa-long-arrow-down"></i>
