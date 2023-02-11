@@ -2,7 +2,6 @@ import Link from "next/link";
 import useGlobalContext from "../../hooks/useGlobalContext";
 import dynamic from "next/dynamic";
 import { useState } from "react";
-import Lightbox from "react-image-lightbox";
 const Collapsible = dynamic(() => import("react-collapsible"), {
   ssr: false,
 });
@@ -42,20 +41,7 @@ const Sidebar = ({ headerMenu }) => {
 
   return (
     <>
-      {open && (
-        <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-          onCloseRequest={() => setOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
-          }
-        />
-      )}
+
 
       {/* <!-- sidebar area start --> */}
       <div className={`sidebar__area ${showSidebar ? "sidebar-opened" : ""}`}>
